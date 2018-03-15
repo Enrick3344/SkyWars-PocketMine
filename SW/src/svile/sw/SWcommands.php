@@ -79,7 +79,7 @@ class SWcommands
      * @return bool
      */
     /** @noinspection PhpUnusedParameterInspection */
-    public function onCommand(CommandSender $sender, Command $command, $label, array $args)
+    public function onCommand(CommandSender $sender, Command $command, string $label, array $args): bool
     {
         if (!($sender instanceof Player) || !$sender->isOp()) {
             switch (strtolower(array_shift($args))):
